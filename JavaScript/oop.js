@@ -98,3 +98,19 @@ let employee = {
 
         increase(obj);
         //console.log(obj); Expected output = 11
+
+// Adding a property to an object using 'circle2' from above as an example.
+    // Using dot notation
+    circle2.location = {x : 1};
+
+    // Using bracket notation
+    circle2['location'] = {y : 2};
+
+// Deleting a property of an object
+    // Using dot notation
+    delete circle2.location;
+
+    // Using bracket notation
+    delete circle['location'];
+    
+
