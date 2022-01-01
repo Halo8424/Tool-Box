@@ -76,3 +76,25 @@ let employee = {
 
     // create a new circle object using the constructor function
     const circle2 = new Circle(3);
+
+// Value vs Reference Types
+    // Primatives: Are copyed by their value.
+    // Objects: Are copyed by their reference.
+
+    // Example of a Primative type.
+    let number = 10;
+        function increase(number){
+            number++;
+        };
+
+        increase(number);
+        // console.log(number); Expected output = 10
+
+    //Example of a Reference type.
+    let obj = {value: 10};
+        function increase(obj){
+            obj.value++;
+        };
+
+        increase(obj);
+        //console.log(obj); Expected output = 11
