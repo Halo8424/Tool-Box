@@ -111,6 +111,27 @@ let employee = {
     delete circle2.location;
 
     // Using bracket notation
-    delete circle['location'];
+    delete circle2['location'];
+
+// Enumeraing Properties of an object
+    // Use the 'for in' loop.
+    for(let key in circle2){
+        // console.log(key);  
+    }
+
+    // Example of looping over an object and getting its properties and values
+    for(let key in circle2){
+        //console.log(key, circle2[key]);
+    }
     
+    // Example of getting all the keys of an object
+    let keys = Object.keys(circle2);
+        // console.log(keys)  returns an Array of key of that object.
+
+    // Example of checking an object for a property or a method. 'use the in operator'
+        if('radius' in circle2){
+            // console.log('circle2 has radius');
+        }
+
+
 
