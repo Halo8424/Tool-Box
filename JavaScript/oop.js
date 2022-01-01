@@ -36,3 +36,18 @@ let employee = {
     // and have other objects Inherit these properties and methods. 
 
 // Polymorphism: Allows us to get rid of long "if and else" and "switch & case" statements. 
+
+// Object Literals Syntax
+    // Create a 'Circle object literal'
+
+    const circle = {
+        radius: 1,
+        location: {
+            x: 1,
+            y: 1
+        },
+        draw: function(){
+            console.log('draw');
+        }
+    };
+
