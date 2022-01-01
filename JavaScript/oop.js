@@ -113,7 +113,7 @@ let employee = {
     // Using bracket notation
     delete circle2['location'];
 
-// Enumeraing Properties of an object
+// Enumerating Properties of an object
     // Use the 'for in' loop.
     for(let key in circle2){
         // console.log(key);  
