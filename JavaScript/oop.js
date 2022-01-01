@@ -51,3 +51,28 @@ let employee = {
         }
     };
 
+// Factory Function Syntax
+    // Create a circle factory function:
+    function createCircle(radius){
+        return{
+            radius,
+            draw: function(){
+                console.log('draw');
+            }
+        };
+    };
+
+    // creating a new circle object
+    const circle1 = createCircle(2);
+
+// Constructor function syntax
+    // create a circle constructor function
+    function Circle(radius){
+        this.radius = radius;
+        this.draw = function(){
+            console.log('draw');
+        }
+    };
+
+    // create a new circle object using the constructor function
+    const circle2 = new Circle(3);
