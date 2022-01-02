@@ -150,3 +150,48 @@ function Circle3(radius) {
 }
 //  A closure is the combination of a function bundled together (enclosed) with references to its surrounding state 
 //  (the lexical environment). In other words, a closure gives you access to an outer function’s scope from an inner function.
+
+
+// Coding Exercise - Stopwatch
+// 1) A duration property. 2) method called reset. 3) method called start. 4) method called stop.
+// 5) Add validation so the start and stop methods can not be called twice. 
+
+function Stopwatch(){
+    let startTime, endTime, running, duration = 0;
+
+    this.start = function(){
+        if(running){
+            throw new Error('Stopwatch is already running')
+        }
+
+        running = true;
+
+        startTime = new Date();
+    };
+
+    this.stop = function(){
+        if(!running){
+            throw new Error('Stopwatch has already stoped')
+        }
+
+        running = false;
+
+        endTime = new Date();
+
+        const seconds = (endTime.getTime() - startTime.getTime()) / 1000; 
+
+        duration += seconds;
+    };
+
+    this.reset = function(){
+        startTime = null;
+        endTime = null;
+        running = false;
+        duration = 0;
+    };
+
+
+    Object.defineProperty(this, 'duration',{
+        get: function() { return duration;}
+    });
+};
