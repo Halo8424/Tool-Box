@@ -14,4 +14,16 @@
 
     console.log(person) // Expected output: 'John Smith';
 
-    
+// Prototype vs Instance Members
+
+    // A circle constructor with a radius property and a draw function
+    function Circle(radius){
+        this.radius = radius;
+        // this.draw = function(){console.log('draw')}
+    };
+
+    // Assuming you will have many instances of this circle object lets move the draw function to this prototype
+
+    Circle.prototype.draw = function(){
+        console.log('draw');
+    };
