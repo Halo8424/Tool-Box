@@ -10,5 +10,5 @@
 
     Triangle.prototype.drawTriangle =  function () {
         console.log("Triangle!!");
-    };
+    };   
         
