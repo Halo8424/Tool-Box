@@ -26,4 +26,8 @@
         Circle.prototype = Object.create(Triangle.prototype);
         Square.prototype = Object.create(Triangle.prototype);
 
-        
+        let circle01 = new Circle();
+        let square02 = new Square();
+            circle01.drawTriangle(); // Expected output: Triangle!!
+            square02.drawTriangle(); // Expected output: Triangle!!
+
