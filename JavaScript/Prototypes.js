@@ -31,3 +31,7 @@
             circle01.drawTriangle(); // Expected output: Triangle!!
             square02.drawTriangle(); // Expected output: Triangle!!
 
+    // ** Best Practice: When ever we 'Reset' the prototype, reset its constuctor as well. 
+        Circle.prototype.constructor = Circle;
+        Square.prototype.constructor = Square;
+
